@@ -1,0 +1,24 @@
+{
+    "html": {
+      "requiredTags": ["header", "footer", "nav"],
+      "forbiddenTags": ["blink", "marquee"]
+    },
+    "css": {
+      "requiredSelectors": [".container", "#main"],
+      "requiredProperties": ["display:flex", "justify-content:center"],
+      "forbiddenProperties": ["position:fixed", "z-index:9999"]
+    },
+    "js": {
+      "requiredFunctions": ["fetch", "addEventListener"],
+      "forbiddenFunctions": ["eval", "document.write"]
+    },
+    "git": {
+      "requiredBranches": ["main", "develop"],
+      "minCommits": 5,
+      "forbidNoFFMerge": false,
+      "minMerges": 1,
+      "minLinesChanged": 50,
+      "requiredGitIgnoreEntries": ["/tmp", "secrets.env"],
+      "requiredFiles": ["README.md", "package.json"]
+    }
+  }
